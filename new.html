@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Website</title>
+</head>
+
+<style>
+  body{
+        padding: 1%;
+        background-repeat:no-repeat;
+        background-image: url("landscape1.jpg");
+        background-position: center;
+        background-size: cover;
+      
+    }
+
+   ul li{
+    padding: 15px; 
+    float:right;
+    list-style-type: none;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 170%;
+    color: black;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul li a{
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+    font-weight: lighter;
+  
+    color: black;
+    font-weight: lighter;
+}
+
+  
+
+    .items{
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+        font-size: larger;
+        text-shadow: 1px 1px 2px;
+    } 
+
+    #intro{
+        font-weight: lighter;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+    }
+
+    #my-btn{
+        padding: 10px;
+        width: 100px;
+        border-radius: 10px;
+        border-style: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+    }
+
+    .css {
+   float:left;
+   padding: 5px;
+   width: 50%;
+ }
+
+
+ @media screen and (max-width: 600px) {
+   .css {
+      width: 80%;
+     
+   }
+   .css2 {
+      width:20%;
+   }
+ }
+
+#tours{
+    background-color: #fff;
+    background-size: contain;
+    width: 101%;
+}
+</style>
+
+
+ <body>
+    <div class="html">
+        <div class="css2">
+    <div class="flex-items">
+        <header id="header">
+            <div id="toggle"></div>
+            <div id="navbar">
+              <ul id="home">
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#home">Home</a></li>
+    </ul>
+    </div> 
+    </header>
+
+    <script>
+        const toggle = document.getElementById("toggle");
+    const navbar = document.getElementById("navbar");
+    const header = document.getElementById("header");
+    
+    document.onclick = function(e) {
+      if (e.target.id !== "header" && e.target.id !== "toggle" && e.target.id !== "navbar") {
+          toggle.classList.remove("active");000000
+          navbar.classList.remove("active")
+      }
+    }
+      toggle.onclick = function() {
+      toggle.classList.toggle("active");
+      navbar.classList.toggle("active");
+    }
+      </script>
+    <div class="container" id="home">
+        <h2 id="intro"><span style="font-family: sans-serif; font-style:italic; font-weight: lighter; font-stretch: expanded; word-spacing: 3px; letter-spacing: 2px; color: white;">Smooth</span><span style="color: rgb(33, 253, 118); word-spacing: 3px; letter-spacing: 3px;">Travels</span></h2>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="items">
+            
+       <br>
+       <br>
+       <br>
+       <br>
+            <p><h1>CRUISE THE</h1>
+           <h1>WORLD</h1>
+            <button id="my-btn">Take a tour</button>
+    </p> 
+    
+     </div>
+    </div>
+   </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div id="tours">
+    <center>OUR VACATION RELAXATION SPOTS</center>
+  </div>
+ </body>
+ </html>
+    
